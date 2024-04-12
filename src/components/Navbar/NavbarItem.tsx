@@ -6,10 +6,10 @@ interface Props {
 }
 
 const NavbarItem: FunctionComponent<Props> = ({ item }) => (
-    <div className='flex flex-nowrap gap-1'>
+    <a className='flex flex-nowrap gap-1'>
         <span className='font-semibold italic text-pink-main'>#0{item.index}</span>
         <p className='font-medium'>{item.section}</p>
-    </div>
+    </a>
 )
 
 export default NavbarItem;
