@@ -19,7 +19,11 @@ export default {
       'main': ['Times New Roman'],
       'secundary': ['Poppins','sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'moon': "url('/src/assets/background/moon.png')"
+      }
+    },
   },
   plugins: [],
 }
