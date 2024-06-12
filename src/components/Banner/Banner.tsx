@@ -1,9 +1,10 @@
-import banner from '../../assets/background/banner.png'
+import banner from '../../assets/img/background/banner.png'
 import { Curriculum, Github, Linkedin } from '../../assets/icons';
-import start from '../../assets/stars/star2.svg'
+import start from '../../assets/stars/star2.svg';
+import './Banner.css'
 
 const Banner = () => (
-    <div className="mt-[6rem] h-[80vh] relative pt-9">
+    <div id='banner' className="mt-[6rem] h-[80vh] relative pt-9">
         <div className="h-[100%] bg-moon bg-cover bg-top mix-blend-screen">
         </div>
         <div className='absolute top-5 w-full'>

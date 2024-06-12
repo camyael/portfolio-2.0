@@ -1,3 +1,10 @@
+export { default as AboutMe } from './AboutMe/AboutMe';
 export { default as Banner } from './Banner/Banner';
+export { default as Contact } from './Contact/Contact';
 export { default as Logo } from './Logo/Logo';
 export { default as Navbar } from './Navbar/Navbar';
+export { default as NavbarItem } from './Navbar/NavbarItem';
+export { default as NavbarItems } from './Navbar/NavbarItems';
+export { default as ItemProject } from './Projects/ItemProject';
+export { default as Projects } from './Projects/Projects';
+export { default as Skills } from './Skills/Skills';
