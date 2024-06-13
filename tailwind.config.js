@@ -7,11 +7,13 @@ export default {
   theme: {
     backgroundColor: {
       'gray': '#F3F3F3',
-      'gray-secondary': '#E1E1E1'
+      'gray-secondary': '#E1E1E1',
+      'pink-main': '#B17686'
     },
     colors: {
       'pink-main': '#B17686',
       'pink-secondary': '#F5B5C5',
+      'gray': '#F3F3F3',
       'pink-main-transparent': 'hsla(344,27%,58%,50%)',
       'black': '#444444',
       'from-white': 'hsla(0, 0%, 100%, 0.5)',
