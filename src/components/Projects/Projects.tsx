@@ -12,7 +12,7 @@ const Projects = () => {
     }
 
     return (
-        <section className="w-4/6 mx-auto">
+        <section id="projectsSection" className="w-4/6 mx-auto">
             <SeparatorTitles section="proyectos" extra="personales"/>
             <div className="mt-16 border-t-2 border-pink-main-transparent flex flex-col relative" id="projects">
                 {

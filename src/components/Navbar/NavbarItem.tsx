@@ -6,7 +6,7 @@ interface Props {
 }
 
 const NavbarItem: FunctionComponent<Props> = ({ item }) => (
-    <a className='flex flex-nowrap gap-1'>
+    <a className='flex flex-nowrap gap-1' href={`#${item.href}`}>
         <span className='font-semibold italic text-pink-main'>#0{item.index}</span>
         <p className='font-medium'>{item.section}</p>
     </a>

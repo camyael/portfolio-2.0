@@ -3,19 +3,23 @@ import { INavbarItem } from "../../interfaces";
 const items: INavbarItem[] = [
     {
         index: 1,
-        section: "sobre mí"
+        section: "sobre mí",
+        href: "aboutMeSection"
     },
     {
         index: 2,
-        section: "skills"
+        section: "skills",
+        href: "skillsSection"
     },
     {
         index: 3,
-        section: "proyectos"
+        section: "proyectos",
+        href: "projectsSection"
     },
     {
         index: 4,
-        section: "contacto"
+        section: "contacto",
+        href: "contactSection"
     },
 ]
 

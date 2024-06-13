@@ -4,7 +4,7 @@ import './AboutMe.css';
 import { Button } from "../../atoms";
 
 const AboutMe:FunctionComponent = () => (
-    <section className="flex w-5/6 items-center justify-center gap-[110px] mx-auto py-10 saturate-0 hover:filter-none transition-all duration-300 ease-in">
+    <section id="aboutMeSection" className="flex w-5/6 items-center justify-center gap-[110px] mx-auto py-10 saturate-0 hover:filter-none transition-all duration-300 ease-in">
         <div className="relative rounded-full border-pink-secondary border-[0.7px] w-[251px] h-[251px] flex justify-center items-center">
             <img src={profile} className="w-[225px] text-center rounded-full bg-gray-secondary"/>
             <div className="star"></div>

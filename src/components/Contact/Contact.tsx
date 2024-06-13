@@ -3,7 +3,7 @@ import FormContact from "./FormContact";
 import LinksContact from "./LinksContact";
 
 const Contact: FunctionComponent = () => (
-    <section className="w-4/6 mx-auto pb-20">
+    <section id="contactSection" className="w-4/6 mx-auto pb-20">
         <p className="lowercase text-center font-main italic text-4xl tracking-tighter">Contacto</p>
         <div className="py-10 flex gap-x-16">
             <div className="w-[60%]">
