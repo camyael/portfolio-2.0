@@ -8,7 +8,9 @@ const Portfolio: FunctionComponent = () => (
         <Banner/>
         <AboutMe/>
         <img className="mx-auto py-20 w-[56px]" src={star}/>
-        <Skills/>
+        <div className="bg-pink-lightPink">
+            <Skills/>
+        </div>
         <img className="mx-auto py-20 w-[56px]" src={star}/>
         <Projects/>
         <img className="mx-auto py-20 w-[56px]" src={star}/>
