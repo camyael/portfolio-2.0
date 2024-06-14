@@ -24,7 +24,7 @@ const FormContact = () => {
                 <textarea className="bg-gray border-pink-main border-[1px] rounded-lg py-2 px-4 text-sm h-40" placeholder="Escribe tu mensaje" onChange={() => setSubmit(true)}/>
             </div>
             <div className="text-center py-8">
-                <Button title="enviar" style="uppercase bg-pink-main text-gray text-sm rounded-xl px-14 py-2 font-thin tracking-widest"/>
+                <Button title="enviar" style="uppercase hover:bg-pink-main hover:text-gray text-sm rounded-xl px-14 py-2 font-thin tracking-widest transition-all duration-300 ease-in"/>
             </div>
             {
                 submit &&
