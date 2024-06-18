@@ -1,7 +1,6 @@
 #banner::after {
     content: '';
     width: 100%;
-    height: 20vh;
     position: absolute;
     left: 0;
     bottom: 0;

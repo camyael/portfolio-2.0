@@ -1,7 +1,7 @@
 import { Github, Linkedin } from "../../assets/icons";
 
 const LinksContact = () => (
-    <div className="flex flex-col gap-y-4">
+    <div className="flex flex-col gap-y-4 justify-center">
         <a href="https://www.linkedin.com/in/camilavillaverde" target="_blank" className="flex items-end gap-x-6">
             <Linkedin svg={{width: 33, height: 33, fill: "#B17686"}}/>
             <p className="text-sm">in/camilavillaverde</p>

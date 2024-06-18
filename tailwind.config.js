@@ -11,6 +11,7 @@ export default {
       'pink-main': '#B17686',
       'pink-secondary': '#F5B5C5',
       'pink-lightPink': '#F4EBED',
+      'to-gray': 'rgba(243, 243, 243, 0.9)',
     },
     colors: {
       'pink-main': '#B17686',

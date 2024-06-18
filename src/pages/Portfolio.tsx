@@ -19,14 +19,14 @@ const Portfolio: FunctionComponent = () => {
     }, [intro])
 
     return (
-        <div className={`${intro ? 'bg-pink-lightPink w-full flex justify-center items-center' : 'bg-gray'} min-h-[100vh] font-secundary text-black pt-5 relative`}>
+        <div className={`${intro ? 'bg-pink-lightPink w-full flex justify-center items-center' : 'bg-gray'} min-h-[100vh] font-secundary text-black pt-5`}>
             {
                 intro ?
                 <div className="w-[200px] h-[200px] flex flex-col justify-center items-center">
                     <Logo/>
                     <div className="border-to-lightPink border-l-pink-secondary border-4 w-[150px] h-[150px] absolute rounded-full animate-spin"></div>
                 </div>
-                : <div>
+                : <div className="relative">
                     <Navbar/>
                     <Banner/>
                     <AboutMe/>
@@ -37,7 +37,7 @@ const Portfolio: FunctionComponent = () => {
                     <img className="mx-auto py-40 w-[56px]" src={star}/>
                     <Projects/>
                     <img className="mx-auto py-40 w-[56px]" src={star}/>
-            <Contact/>
+                    <Contact/>
                 </div>
             }
         </div>
