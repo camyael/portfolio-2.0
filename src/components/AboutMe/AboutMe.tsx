@@ -15,9 +15,9 @@ const AboutMe:FunctionComponent = () => (
             </p>
             <p className="mt-[18px]">Me caracterizo por ser una persona responsable, ordenada y curiosa. Siempre estoy abierta a nuevos desafíos que me hagan superarme y vivir nuevas experiencias, para aprender y crecer tanto personal como profesionalmente.
             </p>
-            <div className="flex justify-center py-[23px]">
+            <a className="flex justify-center py-[23px]" href="/src/assets/Camila Villaverde - CV.pdf" download>
                 <Button title="curriculum" style="uppercase py-2 px-6 tracking-widest"/>
-            </div>
+            </a>
         </div>
     </section>
 )
