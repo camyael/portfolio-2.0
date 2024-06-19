@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { Button } from "../../atoms";
+import Button from "../Button/Button";
 
 const FormContact = () => {
     const [submit, setSubmit] = useState<boolean>(false)

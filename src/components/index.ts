@@ -1,10 +1,17 @@
 export { default as AboutMe } from './AboutMe/AboutMe';
 export { default as Banner } from './Banner/Banner';
+export { default as Button } from './Button/Button';
 export { default as Contact } from './Contact/Contact';
+export { default as FormContact } from './Contact/FormContact';
+export { default as LinksContact } from './Contact/LinksContact';
 export { default as Logo } from './Logo/Logo';
 export { default as Navbar } from './Navbar/Navbar';
 export { default as NavbarItem } from './Navbar/NavbarItem';
 export { default as NavbarItems } from './Navbar/NavbarItems';
 export { default as ItemProject } from './Projects/ItemProject';
 export { default as Projects } from './Projects/Projects';
+export { default as SeparatorTitles } from './SeparatorTitles/SeparatorTitles';
+export { default as CarouselSkill } from './Skills/CarouselSkill';
+export { default as ItemSkill } from './Skills/ItemSkill';
 export { default as Skills } from './Skills/Skills';
+export * from './index';

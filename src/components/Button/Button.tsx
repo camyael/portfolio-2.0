@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Button:FunctionComponent<Props> = ({title, style, handleClick}) => (
-    <button className={`border-[1px] border-pink-main rounded-3xl text-pink-main ${style}`} onClick={handleClick && handleClick}>
+    <button className={`border-[1px] border-pink-main rounded-3xl text-pink-main ${style}`} onClick={handleClick && handleClick} aria-label="">
         {title}
     </button>
 )

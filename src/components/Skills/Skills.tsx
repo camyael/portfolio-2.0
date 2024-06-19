@@ -1,5 +1,5 @@
 import skills from "../../assets/skills/skills";
-import { SeparatorTitles } from "../../atoms";
+import SeparatorTitles from "../SeparatorTitles/SeparatorTitles";
 import CarouselSkills from "./CarouselSkill";
 
 const Skills = () => (

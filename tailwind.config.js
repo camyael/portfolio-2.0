@@ -30,7 +30,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'moon': "url('/src/assets/img/background/moon.png')"
+        'moon': "url('/src/assets/img/background/moon.webp')"
       }
     },
   },

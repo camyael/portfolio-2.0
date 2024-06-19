@@ -41,13 +41,13 @@ const CarouselSkills:FunctionComponent<Props> = ({type, skills}) => {
                 }
                 {
                     (length[0] > 0 && previous) &&
-                    <button className="bg-pink-main w-[28px] h-[28px] absolute left-0 bottom-[50%] rounded-full flex justify-center items-center" onClick={handlePrevious}>
+                    <button className="bg-pink-main w-[28px] h-[28px] absolute left-0 bottom-[50%] rounded-full flex justify-center items-center" aria-label="Botón para volver al anterior" onClick={handlePrevious}>
                         <Previous svg={{width: 10, height: 10, stroke: "#F4EBED"}}/>
                     </button>
                 }
                 {
                     (skills.length > 5 && next) &&
-                    <button className="bg-pink-main w-[28px] h-[28px] absolute right-0 bottom-[50%] rounded-full flex justify-center items-center" onClick={handleNext}>
+                    <button className="bg-pink-main w-[28px] h-[28px] absolute right-0 bottom-[50%] rounded-full flex justify-center items-center" aria-label="Botón para pasar al siguiente" onClick={handleNext}>
                         <Next svg={{width: 10, height: 10, stroke: "#F4EBED"}}/>
                     </button>
                 }

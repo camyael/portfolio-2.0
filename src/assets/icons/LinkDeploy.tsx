@@ -1,0 +1,15 @@
+import { type FunctionComponent } from "react";
+import { IICons } from "../../interfaces";
+
+interface Props {
+  svg: IICons
+}
+
+const LinkDeploy:FunctionComponent<Props> = ({ svg }) => (
+    <svg className="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width={svg.width} height={svg.height} fill="none" viewBox="0 0 24 24">
+    <path stroke={svg.stroke} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"/>
+  </svg>  
+  
+)
+
+export default LinkDeploy;

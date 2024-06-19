@@ -1,17 +1,13 @@
 import { useEffect, useState, type FunctionComponent } from "react"
 import { AboutMe, Banner, Contact, Logo, Navbar, Projects, Skills } from "../components"
 import star from '../assets/img/star.svg'
-import './Portfolio.css';
 
 const Portfolio: FunctionComponent = () => {
     const [intro, setIntro] = useState<boolean>(true);
-    const [cursorX, setCursorX] = useState<number>();
-    const [cursorY, setCursorY] = useState<number>();
-
-    window.addEventListener('mousemove', (e) => {
-        setCursorX(e.pageX);
-        setCursorY(e.pageY);
-    })
+    const [position, setPosition] = useState<{
+        x: number;
+        y: number;
+    }>({x: 0, y: 0})
     
     useEffect(() => {
         let count = 0;
@@ -24,31 +20,59 @@ const Portfolio: FunctionComponent = () => {
         if(count === 100) {
             clearInterval(process) 
         }
+
+        const handleMove = (event: any) => {
+            const { clientX, clientY } = event;
+            setPosition({
+              x: clientX,
+              y: clientY
+            })
+          }
+          
+          !intro && window.addEventListener('pointermove', handleMove)
+      
+          return () => {
+            window.removeEventListener('pointermove', handleMove)
+          }
     }, [intro])
 
+    if(intro) return (
+    <div className='bg-pink-lightPink w-full h-[100vh] flex justify-center items-center'>
+        <div className="w-[200px] h-[200px] flex flex-col justify-center items-center">
+        <Logo/>
+        <div className="border-to-lightPink border-l-pink-secondary border-4 w-[150px] h-[150px] absolute rounded-full animate-spin"></div>
+    </div> 
+    </div>)
+
     return (
-        <div className={`${intro ? 'bg-pink-lightPink w-full flex justify-center items-center' : 'bg-gray'} min-h-[100vh] font-secundary text-black pt-5`}>
-            {
-                intro ?
-                <div className="w-[200px] h-[200px] flex flex-col justify-center items-center">
-                    <Logo/>
-                    <div className="border-to-lightPink border-l-pink-secondary border-4 w-[150px] h-[150px] absolute rounded-full animate-spin"></div>
-                </div>
-                : <div className="">
-                    <Navbar/>
-                    <Banner/>
-                    <AboutMe/>
-                    <img className="mx-auto py-40 w-[56px]" src={star}/>
-                    <div className="bg-pink-lightPink">
-                        <Skills/>
-                    </div>
-                    <img className="mx-auto py-40 w-[56px]" src={star}/>
-                    <Projects/>
-                    <img className="mx-auto py-40 w-[56px]" src={star}/>
-                    <Contact/>
-                    <div className="cursor" style={{left: cursorX + 'px',top:cursorY + 'px'}}></div>
-                </div>
-            }
+        <div className='bg-gray min-h-[100vh] font-secundary text-black pt-5 relative'>
+            <div style={{
+                    position: 'fixed',
+                    borderRadius: '50%',
+                    opacity: .5,
+                    pointerEvents: 'none',
+                    left: -50,
+                    top: -50,
+                    transform: `translate(${position.x}px,${position.y}px)`,
+                    width: '200px',
+                    height: '200px',
+                    filter: 'blur(30px)',
+                    background: 'linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%)',
+                    zIndex:1
+            }}/>
+            <Navbar/>
+            <Banner/>
+            <AboutMe/>
+            <img className="mx-auto py-40 w-[56px]" src={star} alt="Separador de Estrella"/>
+            <div className="bg-pink-lightPink">
+                <Skills/>
+            </div>
+            <img className="mx-auto py-40 w-[56px]" src={star} alt="Separador de Estrella"/>
+            <Projects/>
+            <img className="mx-auto py-40 w-[56px]" src={star} alt="Separador de Estrella"/>
+            <div className="bg-pink-lightPink">
+                <Contact/> 
+            </div>
         </div>
     )
 }

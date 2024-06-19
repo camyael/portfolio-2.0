@@ -7,7 +7,7 @@ const Logo = () => (
             <p className='mt-[-13px]'>villaverde</p>
         </div>
         <div className='absolute top-2 right-4'>
-            <img className='w-[12px] h-[12px]' src={star} alt="" />
+            <img className='w-[12px] h-[12px]' src={star} alt="Estrella" />
         </div>
     </a>
 )
