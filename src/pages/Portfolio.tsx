@@ -1,6 +1,7 @@
 import { useEffect, useState, type FunctionComponent } from "react"
 import { AboutMe, Banner, Contact, Logo, Navbar, Projects, Skills } from "../components"
 import star from '../assets/img/star.svg'
+import './Portfolio.css'
 
 const Portfolio: FunctionComponent = () => {
     const [intro, setIntro] = useState<boolean>(true);
@@ -45,7 +46,7 @@ const Portfolio: FunctionComponent = () => {
     </div>)
 
     return (
-        <div className='bg-gray min-h-[100vh] font-secundary text-black pt-5 relative'>
+        <main id="portfolio" className='bg-gray min-h-[100vh] font-secundary text-black pt-5 relative'>
             <div style={{
                     position: 'fixed',
                     borderRadius: '50%',
@@ -73,7 +74,7 @@ const Portfolio: FunctionComponent = () => {
             <div className="bg-pink-lightPink">
                 <Contact/> 
             </div>
-        </div>
+        </main>
     )
 }
 
