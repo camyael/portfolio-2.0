@@ -65,15 +65,11 @@ const Portfolio: FunctionComponent = () => {
             <Banner/>
             <AboutMe/>
             <img className="mx-auto py-40 w-[56px]" src={star} alt="Separador de Estrella"/>
-            <div className="bg-pink-lightPink">
-                <Skills/>
-            </div>
+            <Skills/>
             <img className="mx-auto py-40 w-[56px]" src={star} alt="Separador de Estrella"/>
             <Projects/>
             <img className="mx-auto py-40 w-[56px]" src={star} alt="Separador de Estrella"/>
-            <div className="bg-pink-lightPink">
-                <Contact/> 
-            </div>
+            <Contact/> 
         </main>
     )
 }
