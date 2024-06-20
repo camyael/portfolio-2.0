@@ -47,7 +47,7 @@ const Portfolio: FunctionComponent = () => {
 
     return (
         <main id="portfolio" className='bg-gray min-h-[100vh] font-secundary text-black pt-5 relative'>
-            <div style={{
+            <div className="opacity-0 lg:opacity-100" style={{
                     position: 'fixed',
                     borderRadius: '50%',
                     opacity: .5,
